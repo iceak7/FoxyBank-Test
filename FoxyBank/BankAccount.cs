@@ -18,12 +18,13 @@ namespace FoxyBank
 
         public void AddBalance(decimal sumToAdd)
         {
-            Balance += sumToAdd;
+            
+            if(sumToAdd>0) Balance += sumToAdd;
         }
 
         public bool SubstractBalance(decimal sumToSubstract)
         {
-            if (this.Balance >= sumToSubstract | this is LoanAccount)
+            if ( sumToSubstract>0 &&( this.Balance >= sumToSubstract | this is LoanAccount ))
             {
                 Balance -= sumToSubstract;
                 return true;
