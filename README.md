@@ -12,7 +12,8 @@ Vad som kan få få fel:
 - Saldot blir felaktigt.
 
 ### Autentisering
-- Autentiseringen ska misslyckas men lyckas 
+- Autentiseringen ska misslyckas på grund av fel lösenord men lyckas
+- Autentiseringen ska misslyckas på grund av fel userId men lyckas
 - Autentiseringen ska lyckas men misslyckas
 
 
